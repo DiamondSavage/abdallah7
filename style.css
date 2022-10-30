@@ -254,7 +254,7 @@ body{
 }
 .services-content .srv .image{
     text-align: center;
-    position: relative;
+    
 }
 
 .portfolio {
@@ -284,6 +284,10 @@ body{
 }
 .portfolio .portfolio-content .card .info h3 {
     margin: 0;
+}
+.linka{
+    text-decoration: none;
+    color: black;
 }
 .portfolio .portfolio-content .card .info p {
     color: #777;
@@ -436,4 +440,24 @@ body{
 .footer span {
     font-weight: bold;
     color: var(--main-color);
+}
+.img{
+    border-radius: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.img:hover{
+    animation: test 2s 1;
+    transition: 2s;
+}
+@keyframes test{
+    to{
+        opacity: 0.2;
+        transform: translatey(-20px);
+    }
+}
+.prod{
+    color: #444;
+    font-weight: 400;
+    line-height: 1.6;
 }
