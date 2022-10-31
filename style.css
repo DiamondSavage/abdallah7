@@ -444,7 +444,6 @@ body{
 .img{
     border-radius: 20px;
     margin-bottom: 10px;
-    position: relative;
 }
 .img:hover{
     animation: test 2s 1;
