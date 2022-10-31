@@ -168,9 +168,8 @@ body{
 
 .special-heading{
     color: #10cab7;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 600px;
-    text-transform: uppercase;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -460,9 +459,62 @@ body{
     font-weight: 400;
     line-height: 1.6;
 }
+
 @media (max-width: 767px){
     .portfolio-content{
         display: flex;
         flex-direction: column;
         margin: 0;}
+}
+.wrapper{
+    display: inline-flex;
+}
+.wrapper  .static-txt{
+    font-size: 60px;
+    color: black;
+    font-weight: 400;
+}
+.dynamic-txts li{
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    color: #10cab7;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+@media (max-width: 767px){
+    .dynamic-txts li{
+        font-size: 50px;
+        font-weight: 600;
+    }
+} 
+.wrapper .dynamic-txts{
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+.dynamic-txts li span{
+    position: relative;
+}
+.dynamic-txts li span::after{
+    content: '';
+    position: absolute;
+    background: white;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #10cab7;
+    animation: typer 1.5s steps(10) infinite;
+}
+@keyframes typer{
+    100%{
+        left: 100%;
+        margin: 0 -30px 0 30px;
+    }
+}
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
 }
